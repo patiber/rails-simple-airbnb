@@ -1,0 +1,22 @@
+<nav class="navbar shadow bg-body-tertiary">
+  <div class="nav-title-container"><i class="fa-solid fa-house house-icon"></i><h2>Simple Airbnb</h2></div>
+</nav>
+<div class="card-category" style="background-image: url(https://k8q3f6p8.rocketcdn.me/wp-content/uploads/2019/05/Google-Maps-Tips.png)">
+  <div class="show-container">
+    <h2><%= @flat.name %></h2>
+    <p><%= @flat.address %></p>
+  </div>
+</div>
+<div class="container-container-show">
+  <div class="show-container">
+    <h3>A little bit more about the flat</h3>
+    <p><%= @flat.description %></p>
+  </div>
+  <div class="show-container">
+  <h3>Details</h3>
+    <p><i class="fa-solid fa-euro-sign"></i> <%= @flat.price_per_night %></p>
+    <p><i class="fa-solid fa-user-group"></i> <%= @flat.number_of_guests %></p>
+  </div>
+</div>
+<%# <%= link_to "Delete Flat", article_path(@article), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
+<%= link_to "Back to list", flats_path %>

@@ -1,0 +1,13 @@
+<nav class="navbar shadow bg-body-tertiary">
+  <div class="nav-title-container"><i class="fa-solid fa-house house-icon"></i><h2>Simple Airbnb</h2></div>
+</nav>
+
+<h1 class="index-title">Add a Flat</h1>
+<%= simple_form_for(@flat) do |f| %>
+  <div class="input"><%= f.input :name %></div>
+  <div class="input"><%= f.input :description %></div>
+  <div class="input"><%= f.input :address %></div>
+  <div class="input"><%= f.input :price_per_night %></div>
+  <div class="input"><%= f.input :number_of_guests %></div>
+  <div class="input"><%= f.submit %></div>
+<% end %>
